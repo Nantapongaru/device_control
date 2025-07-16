@@ -11,7 +11,6 @@ void setup() {
 
 void loop() {
 
-
 if(Serial.available()){
   countdown = Serial.parseInt();
   Serial.print("จะเริ่มนับถอยหลัง");

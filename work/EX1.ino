@@ -8,6 +8,7 @@ void setup() {
   Serial.println("ใส่จำนวนวินาทีสำหรับ นับถอยหลัง");
 
 }
+
 void loop() {
 
 if(Serial.available()){
@@ -23,7 +24,6 @@ if(ready){
     delay(1000);
   }
 
-  
   Serial.println("เวลา...");
   ready = false ;
   Serial.println("พิมพ์ข้อมูลเเล้วเริ่มใหม่");

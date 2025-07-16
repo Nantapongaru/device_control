@@ -1,6 +1,6 @@
 #define LED_BUILTIN 2
 void setup() {
-  /
+  
   Serial.begin(9600);
  
   pinMode(LED_BUILTIN, OUTPUT);

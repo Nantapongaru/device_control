@@ -7,13 +7,11 @@ void setup() {
   
 }
 
-
 void loop() {
   for (int i = 1; i <= 4; i++) {
     Road(i);
   }
 }
-
 
 void Road(int greenRoad) {
   Serial.println("---------เริ่ม-----------");

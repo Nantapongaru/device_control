@@ -1,6 +1,6 @@
 #include <ESP32Servo.h>
 Servo myservo;
-char user_input;
+char user_input;  #//String user_input = "";
 
 
 void setup() {
@@ -11,9 +11,9 @@ void setup() {
 
 void loop() {
   while(Serial.available()> 0){
-    char select_mode = Serial.read();
-    user_input = char(Serial.read());
-    
+    char select_mode = Serial.read();  //user_input = Serial.readStringUntil('\n');
+    user_input = char(Serial.read());   //user_input.trim();
+
     if(user_input != select_mode){
       user_input = select_mode;
     }else{
@@ -44,3 +44,8 @@ void loop() {
   }
 
 }
+
+
+
+
+

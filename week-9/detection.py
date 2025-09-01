@@ -3,7 +3,7 @@ import cv2
 import serial
 import time
 import numpy as np
-
+#-------------------++++++++++
 # ---------------------- ตั้งค่า Serial ----------------------
 arduino = serial.Serial('COM3', 9600, timeout=1)
 time.sleep(2)
